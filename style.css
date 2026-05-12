@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', sans-serif; }
+
+body { background-color: #e8e3d8; }
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    /* Replace with your image URL */
+    background: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+}
+
+.overlay-card {
+    background: white;
+    padding: 60px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.overlay-card h4 { color: #888; letter-spacing: 2px; font-size: 12px; margin-bottom: 20px; }
+.overlay-card h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; }
+.overlay-card p { color: #555; margin-bottom: 30px; line-height: 1.6; }
+
+.btn-group { display: flex; gap: 15px; }
+
+button { padding: 15px 30px; cursor: pointer; border: 1px solid #000; transition: 0.3s; }
+.btn-dark { background: #222; color: white; }
+.btn-dark:hover { background: #444; }
+.btn-light { background: transparent; color: #000; }
+.btn-light:hover { background: #eee; }
