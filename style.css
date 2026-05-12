@@ -1,5 +1,3 @@
-/* style.css */
-
 *{
   margin:0;
   padding:0;
@@ -23,11 +21,8 @@ body{
   top:0;
   left:0;
   width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 7%;
   z-index:1000;
+  padding:15px 7%;
   transition:0.4s;
 }
 
@@ -37,36 +32,65 @@ body{
   box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
+/* TOP ROW */
+
+.top-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
 .logo{
-  font-size:30px;
+  font-size:34px;
   font-weight:700;
   font-family:'Cormorant Garamond', serif;
-  color:#fff;
+  color:white;
 }
 
 .navbar.scrolled .logo{
   color:#111;
 }
 
+/* BOTTOM ROW */
+
+.bottom-nav{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+}
+
 .nav-links{
   display:flex;
   list-style:none;
-  gap:30px;
+  gap:40px;
 }
 
 .nav-links a{
   text-decoration:none;
-  color:#fff;
+  color:white;
   font-weight:500;
+  font-size:17px;
   transition:0.3s;
+  position:relative;
 }
 
 .navbar.scrolled .nav-links a{
   color:#111;
 }
 
-.nav-links a:hover{
-  color:#d6a77a;
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0%;
+  height:2px;
+  background:#d6a77a;
+  transition:0.4s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
 }
 
 .menu-btn{
@@ -74,6 +98,41 @@ body{
   font-size:28px;
   color:white;
   cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .bottom-nav{
+    justify-content:flex-end;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:110px;
+    right:-100%;
+    background:white;
+    width:250px;
+    flex-direction:column;
+    padding:35px;
+    border-radius:10px;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active{
+    right:20px;
+  }
+
+  .nav-links a{
+    color:#111 !important;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
 }
 
 /* HERO SECTION */
@@ -415,4 +474,42 @@ footer{
     flex-direction:column;
   }
 
+}
+/* ABOUT LETTER */
+
+.about-section{
+  padding:100px 7%;
+  background:#efe7df;
+  display:flex;
+  justify-content:center;
+}
+
+.about-letter{
+  max-width:900px;
+  background:white;
+  padding:70px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  line-height:2;
+}
+
+.about-letter h2{
+  font-size:55px;
+  margin-bottom:30px;
+  font-family:'Cormorant Garamond', serif;
+  text-align:center;
+}
+
+.about-letter p{
+  margin-bottom:20px;
+  color:#555;
+  font-size:18px;
+}
+
+.about-letter h3{
+  margin-top:40px;
+  font-family:'Cormorant Garamond', serif;
+  font-size:32px;
+  text-align:right;
+  color:#222;
 }
