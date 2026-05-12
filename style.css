@@ -8,19 +8,21 @@ body { background-color: #e8e3d8; }
     align-items: center;
     padding-left: 10%;
     /* Replace with your image URL */
-    background: url('https://www.google.com/url?sa=E&q=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595777457583-95e059d50a58%3Fq%3D80%26w%3D500%26auto%3Dformat%26fit%3Dcrop') no-repeat center center/cover;
+    background: url('h<img src="https://images.unsplash.com/photo-1595777457583-95e059d50a58?q=80&w=500&auto=format&fit=crop" alt="Summer Dress">format%26fit%3Dcrop') no-repeat center center/cover;
 }
 
 .overlay-card {
     background: white;
-    padding: 60px;
-    max-width: 500px;
+    padding: 80px; /* Increased padding makes the box feel more spacious */
+    max-width: 650px; /* Increased max-width makes the card wider */
+    width: 90%; /* Ensures it stays responsive on smaller screens */
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.overlay-card h4 { color: #888; letter-spacing: 2px; font-size: 12px; margin-bottom: 20px; }
-.overlay-card h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; }
-.overlay-card p { color: #555; margin-bottom: 30px; line-height: 1.6; }
+.overlay-card h1 { 
+    font-size: 60px; /* Made title bigger */
+    margin-bottom: 25px; 
+}
 
 .btn-group { display: flex; gap: 15px; }
 
