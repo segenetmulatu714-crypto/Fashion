@@ -1,30 +1,200 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Fashion Brand | Modern Style</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Z_ናጭ Fashion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="hero-section">
-        <div class="overlay-card">
-            <h4>DESIGNER CLOTHES</h4>
-            <h1>Your New<br>Everyday Style.</h1>
-            <p>Jolly House is your destination for designer and comfortable clothes for any occasion.</p>
-            <div class="btn-group">
-    <!-- Shop Now redirects to shop.html -->
-    <button class="btn-dark" onclick="location.href='shop.html'">Shop Now +</button>
-<section class="about-section">
-    <h2>About</h2>
-  <p>The "Modern & Trendy" Approach
-"Welcome to [M.A], where style meets the pulse of the moment. We deliver fashion that fits your mood and your lifestyle. Born from a desire to redefine modern wardrobe essentials, we bridge the gap between high-fashion aesthetics and everyday wearability. We don’t just follow trends; we create pieces that celebrate individuality, inclusivity, and the confidence to stand out in the crowd."
-</p>    
-  </section>
+  <!-- NAVBAR -->
+<header class="navbar">
+
+  <!-- TOP ROW -->
+  <div class="top-nav">
+    <div class="logo">Jolly House</div>
+
+    <div class="menu-btn" id="menu-btn">
+      ☰
     </div>
-<div style="margin-top: 20px;">
-    <p>Contact:<a herf="https://www.linkedin.com/in/segenet-mulatu-8b62453a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
- <a href="mailto:segenetmulatu76@gmail.com">segenetmulatu76@gmail.com</a></p>
-</div>
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <nav class="bottom-nav">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a onclick="location.href='shop.html'">Collection</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-card">
+        <p class="small-title">DESIGNER CLOTHES</p>
+
+        <h1>
+          Your New <br />
+          Everyday Style.
+        </h1>
+
+        <p class="hero-text">
+          Z_ናጭ Fashion is your destination for elegant,
+          comfortable and modern fashion for every occasion.
+          Discover premium collections inspired by timeless beauty.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#collection" class="btn dark-btn">
+            Collection
+          </a>
+
+          <button class="btn light-btn" id="aboutBtn">
+            About Us
+          </button>
         </div>
+      </div>
+
     </div>
+
+  </section>
+
+  <!-- COLLECTION SECTION -->
+  <section class="collection-section" id="collection">
+
+    <div class="section-title">
+      <h2>Featured Collections</h2>
+      <p>Luxury fashion designed for confidence and elegance.</p>
+    </div>
+
+    <div class="collection-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>Summer Essentials</h3>
+          <p>Lightweight and modern styles for everyday wear.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>Elegant Women</h3>
+          <p>Premium outfits crafted with sophistication.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>Street Fashion</h3>
+          <p>Trendy looks inspired by modern urban culture.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+
+    <div class="about-container">
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2>About Z_ናጭ </h2>
+
+        <p>
+          At Z_ናጭ Fashion, we believe fashion should be timeless,
+          luxurious, and comfortable. Our collections are designed
+          for modern individuals who love confidence and elegance.
+        </p>
+
+        <p>
+          We create premium-quality fashion with carefully selected
+          fabrics and modern trends to help you stand out every day.
+        </p>
+
+        <div class="about-features">
+          <div class="feature-box">
+            <h3>Premium Quality</h3>
+            <p>High-end fabrics with elegant finishing.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Modern Design</h3>
+            <p>Inspired by luxury and minimal fashion trends.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+
+        <p>
+          Have questions about our collections or services?
+          Reach out to us anytime.
+        </p>
+
+        <div class="contact-details">
+          <p><strong>Email:</strong> segenetmulatu76@gmail.com</p>
+          <p><strong>Phone:</strong> +251920621502</p>
+          <p><strong>Location:</strong> Addis Ababa_Ethiopia</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Z_ናጭ Fashion. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
